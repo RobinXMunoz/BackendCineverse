@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "firebase": "^10.14.1"
+  },
+  "proxy": "http://localhost:3001"
+}

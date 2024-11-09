@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEVERSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="getPosts()">
+
+    <header>
+        <h1>▮▮▮▮▮▮▮▮▮▮  ⓅⒺⓁⒾⒸⓊⓁⒶⓈ  ▮▮▮▮▮▮▮▮▮▮</h1>
+    </header>
+    
+    <div id="main-content">
+
+        <section id="form">
+            <h2>Añadir una Película</h2>
+
+            <form id="postForm">
+                <input type="text" id="title" placeholder="Título Película" required>
+                <textarea id="content" placeholder="Descripción"></textarea>
+                <input type="text" id="imageUrl" placeholder="URL de la imagen">
+                <input type="number" id="value" placeholder="Calificacion"> 
+                <input type="hidden" id="postId"> 
+                <button type="button" onclick="createPost()">Enviar</button>
+            </form>      
+
+            <p id="message" style="display: none;"></p>
+        </section>
+        
+        <section id="posts">
+            <div id="post-container"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
